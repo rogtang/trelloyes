@@ -17,6 +17,7 @@ describe('List component', () => {
         const tree = renderer
           .create(<List key = {'1'}
             header = {'First list'}
+            //App renders List component with allCards object
             cards = {[{ id: 'l', title: 'Twelfth card', content: 'lorem ipsum'}]} />)
           .toJSON();
         expect(tree).toMatchSnapshot();  
